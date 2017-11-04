@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "807300764512",
+    "firebase_url": "https://stockapp-73c32.firebaseio.com",
+    "project_id": "stockapp-73c32",
+    "storage_bucket": "stockapp-73c32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807300764512:android:090195a7db8b21e4",
+        "android_client_info": {
+          "package_name": "huseyinkaragoz.app.stockapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807300764512-cd9eokimleq348gpjq8kvcg9g5t0ogd2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "huseyinkaragoz.app.stockapp",
+            "certificate_hash": "46be2f03e683777898bb735bc56deac28109963b"
+          }
+        },
+        {
+          "client_id": "807300764512-10lej6lkerpmhbh5kvk4o5nen57bhffn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxG_h5XuNcJIHu1HtxFH6qwEG3ithlSOQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807300764512-10lej6lkerpmhbh5kvk4o5nen57bhffn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

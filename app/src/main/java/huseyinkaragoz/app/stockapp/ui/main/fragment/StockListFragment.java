@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import huseyinkaragoz.app.stockapp.data.local.entity.StockEntity;
-import huseyinkaragoz.app.stockapp.databinding.FragmentStockListDataBinding;
 import huseyinkaragoz.app.stockapp.ui.BaseFragment;
 import huseyinkaragoz.app.stockapp.ui.main.callback.StockListCallback;
 import huseyinkaragoz.app.stockapp.ui.main.viewmodel.StockListViewModel;

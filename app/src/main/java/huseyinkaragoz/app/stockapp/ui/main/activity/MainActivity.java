@@ -8,6 +8,7 @@ import huseyinkaragoz.app.stockapp.ui.BaseActivity;
 
 public class MainActivity extends BaseActivity {
 
+
     @Override
     public int getLayoutRes() {
         return R.layout.activity_main;
