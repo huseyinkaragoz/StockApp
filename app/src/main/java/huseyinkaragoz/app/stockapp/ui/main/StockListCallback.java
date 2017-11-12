@@ -1,4 +1,4 @@
-package huseyinkaragoz.app.stockapp.ui.main.callback;
+package huseyinkaragoz.app.stockapp.ui.main;
 
 import android.view.View;
 

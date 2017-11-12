@@ -6,8 +6,8 @@ import android.arch.lifecycle.ViewModelProvider;
 import dagger.Binds;
 import dagger.Module;
 import dagger.multibindings.IntoMap;
-import huseyinkaragoz.app.stockapp.ui.detail.viewmodel.StockDetailViewModel;
-import huseyinkaragoz.app.stockapp.ui.main.viewmodel.StockListViewModel;
+import huseyinkaragoz.app.stockapp.ui.detail.StockDetailViewModel;
+import huseyinkaragoz.app.stockapp.ui.main.StockListViewModel;
 import huseyinkaragoz.app.stockapp.viewmodel.StockViewModelFactory;
 
 /**

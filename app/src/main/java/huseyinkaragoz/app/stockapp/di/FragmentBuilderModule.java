@@ -2,7 +2,7 @@ package huseyinkaragoz.app.stockapp.di;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
-import huseyinkaragoz.app.stockapp.ui.main.fragment.StockListFragment;
+import huseyinkaragoz.app.stockapp.ui.main.StockListFragment;
 
 /**
  * Created by huseyinkaragozz on 28.10.2017.
@@ -12,5 +12,5 @@ import huseyinkaragoz.app.stockapp.ui.main.fragment.StockListFragment;
 public abstract class FragmentBuilderModule {
 
     @ContributesAndroidInjector
-    abstract StockListFragment contributeStockListFragment();
+    abstract StockListFragment stockListFragment();
 }

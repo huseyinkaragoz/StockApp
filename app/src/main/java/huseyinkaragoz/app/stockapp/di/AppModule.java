@@ -2,7 +2,6 @@ package huseyinkaragoz.app.stockapp.di;
 
 import android.app.Application;
 import android.arch.persistence.room.Room;
-import android.content.Context;
 import android.content.res.Resources;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -31,24 +30,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 @Module(includes = ViewModelModule.class)
 public class AppModule {
-
-    private final StockApplication stockApplication;
-
-    public AppModule(StockApplication stockApplication) {
-        this.stockApplication = stockApplication;
-    }
-
-    @Provides
-    @Singleton
-    public StockApplication stockApplication() {
-        return this.stockApplication;
-    }
-
-    @Provides
-    @Singleton
-    public Context applicationContext() {
-        return this.stockApplication;
-    }
 
 
     @Provides
@@ -86,8 +67,8 @@ public class AppModule {
 
     @Provides
     @Singleton
-    GoogleApiClient provideGoogleApiClient(GoogleApiClient googleApiClient) {
-        googleApiClient = new GoogleApiClient.Builder(applicationContext()).build();
+    GoogleApiClient provideGoogleApiClient(GoogleApiClient googleApiClient, StockApplication stockApplication) {
+        googleApiClient = new GoogleApiClient.Builder(stockApplication).build();
         return googleApiClient;
     }
 

@@ -40,7 +40,7 @@ public abstract class BaseActivity<DB extends ViewDataBinding> extends AppCompat
     }
 
     @Override
-    public AndroidInjector<android.support.v4.app.Fragment> supportFragmentInjector() {
+    public AndroidInjector<Fragment> supportFragmentInjector() {
         return fragmentDispatchingAndroidInjector;
     }
 

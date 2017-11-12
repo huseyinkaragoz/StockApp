@@ -1,4 +1,4 @@
-package huseyinkaragoz.app.stockapp.ui.main.viewmodel;
+package huseyinkaragoz.app.stockapp.ui.main;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
@@ -12,7 +12,7 @@ import huseyinkaragoz.app.stockapp.data.StockRepository;
 import huseyinkaragoz.app.stockapp.data.local.entity.StockEntity;
 
 /**
- * Created by huseyinkaragozz on 28.10.2017.
+ * Created by huseyinkaragozz on 12.11.2017.
  */
 
 public class StockListViewModel extends ViewModel {

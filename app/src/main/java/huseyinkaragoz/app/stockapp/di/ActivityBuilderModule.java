@@ -1,10 +1,11 @@
 package huseyinkaragoz.app.stockapp.di;
 
 import dagger.Module;
+import dagger.Provides;
 import dagger.android.ContributesAndroidInjector;
-import huseyinkaragoz.app.stockapp.ui.detail.activity.StockDetailActivity;
-import huseyinkaragoz.app.stockapp.ui.main.activity.MainActivity;
-import huseyinkaragoz.app.stockapp.ui.main.fragment.StockListFragment;
+import huseyinkaragoz.app.stockapp.ui.detail.StockDetailActivity;
+import huseyinkaragoz.app.stockapp.ui.main.MainActivity;
+import huseyinkaragoz.app.stockapp.ui.main.StockListFragment;
 
 /**
  * Created by huseyinkaragozz on 27.10.2017.
@@ -12,13 +13,9 @@ import huseyinkaragoz.app.stockapp.ui.main.fragment.StockListFragment;
 @Module
 public abstract class ActivityBuilderModule {
 
-
-    @ContributesAndroidInjector(modules = ActivityBuilderModule.class)
+    @ContributesAndroidInjector(modules = FragmentBuilderModule.class)
     abstract MainActivity mainActivity();
 
-    @ContributesAndroidInjector(modules = ActivityBuilderModule.class)
+    @ContributesAndroidInjector
     abstract StockDetailActivity stockDetailActivity();
-
-    @ContributesAndroidInjector(modules = FragmentBuilderModule.class)
-    abstract StockListFragment stockListFragment();
 }

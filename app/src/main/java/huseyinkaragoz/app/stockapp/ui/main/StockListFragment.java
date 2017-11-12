@@ -1,4 +1,4 @@
-package huseyinkaragoz.app.stockapp.ui.main.fragment;
+package huseyinkaragoz.app.stockapp.ui.main;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,15 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import dagger.Subcomponent;
 import huseyinkaragoz.app.stockapp.data.local.entity.StockEntity;
 import huseyinkaragoz.app.stockapp.ui.BaseFragment;
-import huseyinkaragoz.app.stockapp.ui.main.callback.StockListCallback;
-import huseyinkaragoz.app.stockapp.ui.main.viewmodel.StockListViewModel;
 
 /**
- * Created by huseyinkaragozz on 28.10.2017.
+ * Created by huseyinkaragozz on 12.11.2017.
  */
-
+@Subcomponent
 public class StockListFragment extends BaseFragment implements StockListCallback {
 
     public static StockListFragment newInstance() {

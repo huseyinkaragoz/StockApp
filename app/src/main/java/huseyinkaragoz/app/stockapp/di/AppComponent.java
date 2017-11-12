@@ -14,18 +14,15 @@ import huseyinkaragoz.app.stockapp.StockApplication;
  */
 
 @Singleton
-@Component(modules = {
-        AppModule.class,
+@Component(modules = {AppModule.class,
         AndroidInjectionModule.class,
         ActivityBuilderModule.class})
 public interface AppComponent {
 
     @Component.Builder
     interface Builder {
-
         @BindsInstance
         Builder application(Application application);
-
         AppComponent build();
     }
 
