@@ -44,4 +44,5 @@ public abstract class BaseActivity<DB extends ViewDataBinding> extends AppCompat
         return fragmentDispatchingAndroidInjector;
     }
 
+
 }

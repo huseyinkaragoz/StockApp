@@ -2,10 +2,13 @@ package huseyinkaragoz.app.stockapp.di;
 
 import android.app.Application;
 import android.arch.persistence.room.Room;
+import android.content.Context;
 import android.content.res.Resources;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 
 import java.util.concurrent.TimeUnit;
 
@@ -67,8 +70,8 @@ public class AppModule {
 
     @Provides
     @Singleton
-    GoogleApiClient provideGoogleApiClient(GoogleApiClient googleApiClient, StockApplication stockApplication) {
-        googleApiClient = new GoogleApiClient.Builder(stockApplication).build();
+    GoogleApiClient provideGoogleApiClient(GoogleApiClient googleApiClient, Application application) {
+        googleApiClient = new GoogleApiClient.Builder(application).build();
         return googleApiClient;
     }
 
@@ -81,5 +84,12 @@ public class AppModule {
                 .build();
         return gso;
     }
+
+    FusedLocationProviderClient fusedLocationProviderClient(Context context) {
+        FusedLocationProviderClient fLPC = LocationServices.getFusedLocationProviderClient(context);
+        return fLPC;
+    }
+
+
 
 }
